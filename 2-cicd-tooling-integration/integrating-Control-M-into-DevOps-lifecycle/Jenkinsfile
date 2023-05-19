@@ -4,7 +4,7 @@ pipeline {
         stage('Build') {
             environment {
                 CONTROLM_CREDS = credentials('controlm-testserver-creds')
-                ENDPOINT = 'https://clm-aus-tobcvy:9000/automation-api'
+                ENDPOINT = 'https://clm-aus-tobcvy:8000/automation-api'
             }
             steps {
                 sh '''
@@ -30,7 +30,7 @@ pipeline {
             }
             environment {
                 CONTROLM_CREDS = credentials('controlm-testserver-creds')
-                ENDPOINT = 'https://clm-aus-tobcvy:9000/automation-api'
+                ENDPOINT = 'https://clm-aus-tobcvy:8000/automation-api'
             }
             steps {
                 sh '''
@@ -50,7 +50,7 @@ pipeline {
             }
             environment {
                 CONTROLM_CREDS = credentials('controlm-prodserver-creds')
-                ENDPOINT = 'https://clm-aus-tobcvy:9000/automation-api'
+                ENDPOINT = 'https://clm-aus-tobcvy:8000/automation-api'
             }
             steps {
                 sh '''
